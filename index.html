@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Rotating Slider js</title>
+    <link rel="icon" href="images/C.png">
+    <link rel="stylesheet" href="css/rotating-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="rotating-slider">
+        <ul class="slides">
+          <li>
+            <div class="inner">
+              <!-- <h2>Jassica Joe</h2>
+              <p>Fashion Designer.</p> -->
+            </div>
+          </li>
+          <li>
+            <div class="inner"></div>
+          </li>
+          <li>
+            <div class="inner">
+              <!-- <h2>Arthiya Henly</h2>
+              <p>Web Designer</p> -->
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <!-- <h2>Mariya Anni</h2>
+              <p>Model & Coder</p> -->
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <h2></h2>
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.rotating-slider.js"></script>
+    <script>
+        $(function(){ 
+            $('.rotating-slider').rotatingSlider({
+                autoRotate:true,
+                autoRotateInterval: 2000,
+                slideHeight : Math.min(360, window.innerWidth -80),
+                slideWidth : Math.min(480, window.innerWidth - 80),
+            });
+        });
+            </script>
+    
+</body>
+</html>
